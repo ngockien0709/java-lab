@@ -83,8 +83,10 @@ public class Manager {
         System.out.println("\tItem \tFruit name \tOrigin \tPrice");
         int count = 1;
         for (Fruit fruit : af) {
+            if(fruit.getQuantity() != 0){//check shop have item or not 
             System.out.println("\t" + (count++) + "\t" + fruit.getFruitName()
                     + "\t" + fruit.getOrigin() + "\t" + fruit.getPrice());
+        }
         }
     }
 
@@ -106,7 +108,7 @@ public class Manager {
     }
 
     public static void shopping(ArrayList<Fruit> af, Hashtable<String, ArrayList<Order>> ht) {
-        if (af.isEmpty()) {
+        if (af.isEmpty()) { //check list empty user can't buy
             System.out.println("no have item");
             return;
         }

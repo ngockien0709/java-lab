@@ -17,7 +17,7 @@ public class Validate {
     static Scanner sc = new Scanner(System.in);
 
     public static int getInputLimit(int min, int max) {
-        while (true) {
+        while (true) { //loop until user input correct
             try {
                 int input = Integer.parseInt(sc.nextLine().trim());
                 if(input>max||input<min){
@@ -31,7 +31,7 @@ public class Validate {
     }
     
     public static String getInputString(){
-        while (true) {            
+        while (true) {  //loop until user input correct          
             try {
                 String s= sc.nextLine().trim();
                 if(s.isEmpty()){
@@ -46,7 +46,7 @@ public class Validate {
     }
     
     public static double getInputDouble(){
-        while (true) {            
+        while (true) {     //loop until user input correct       
             try {
                 double d = Double.parseDouble(sc.nextLine().trim());
                 if(d<0){
@@ -61,7 +61,7 @@ public class Validate {
     }
     
     public static int getInputInt(){
-        while (true) {            
+        while (true) {    //loop until user input correct        
             try {
                 int input = Integer.parseInt(sc.nextLine().trim());
                 if(input<0){
@@ -75,7 +75,7 @@ public class Validate {
     }
     
     public static boolean checkuserChoose(){
-        while (true) {            
+        while (true) {    //loop until user input correct        
             try {
                 System.out.print("do you want continue: ");
                 String s = sc.nextLine().trim();
